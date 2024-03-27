@@ -22,7 +22,7 @@ jobs:
       run: dotnet restore
       
     - name: Install NuGet package
-      run: dotnet add package Microsoft.CodeAnalysis.FxCopAnalyzers --version 3.3.2
+      run: dotnet add /path/to/your/project.csproj package Microsoft.CodeAnalysis.FxCopAnalyzers --version 3.3.2
       
     - name: Run Roslyn Analyzers
-      run: dotnet build /p:WarningLevel=6 /p:DebugType=None /p:DebugSymbols=false /p:Platform="Any CPU" /p:TreatWarningsAsErrors=true
+      run: dotnet build C:/Users/PCUSER/source/repos/pract14/Prgram.cs /p:WarningLevel=6 /p:DebugType=None /p:DebugSymbols=false /p:Platform="Any CPU" /p:TreatWarningsAsErrors=true
